@@ -39,20 +39,20 @@ body {
 .card-top {
    /* Rule 3: Position the Top Card - Absolute positioning */
    position: absolute;
-   left: calc(50% - 95px);
-   top: calc(50% - 90px);
-   /* Rule 5: Stack the Cards - Higher z-index for top card */
-   z-index: 2;
+   left: calc(50% - 5px);
+   top: calc(50% - 70px);
+   /* Rule 5: Stack the Cards - Lower z-index for black card */
+   z-index: 1;
 
 }
 
 .card-bottom {
    /* Rule 4: Position the Bottom Card - Absolute positioning */
    position: absolute;
-   left: calc(50% - 5px);
-   top: calc(50% - 70px);
-   /* Rule 5: Stack the Cards - Lower z-index for bottom card */
-   z-index: 1;
+   left: calc(50% - 95px);
+   top: calc(50% - 90px);
+   /* Rule 5: Stack the Cards - Higher z-index for red card */
+   z-index: 2;
 
 }
 
