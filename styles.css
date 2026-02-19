@@ -3,6 +3,20 @@ body {
    padding: 0;
 }
 
+.instructions {
+   position: fixed;
+   top: 20px;
+   left: 50%;
+   transform: translateX(-50%);
+   color: white;
+   font-size: 18px;
+   font-family: Arial, sans-serif;
+   background-color: rgba(0, 0, 0, 0.6);
+   padding: 10px 20px;
+   border-radius: 8px;
+   z-index: 100;
+}
+
 .table {
    width: 100vw;
    height: 100vh;
