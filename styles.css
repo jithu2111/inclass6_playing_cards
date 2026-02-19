@@ -1,9 +1,16 @@
-.table {
-   width: 400px;
-   height: 300px;
+body {
+   margin: 0;
+   padding: 0;
+}
 
-   /* TODO: Add part of your solution here */
-   
+.table {
+   width: 100vw;
+   height: 100vh;
+   position: relative;
+
+   /* Rule 1: Table Background - Linear gradient from forestgreen to darkgreen */
+   background: linear-gradient(to bottom, forestgreen, darkgreen);
+
 }
 
 .card-red {
@@ -16,24 +23,36 @@
 
 .card {
    background-color: whitesmoke;
-   border: 1px solid black;         
+   border: 1px solid black;
    width: 100px;
    height: 160px;
    line-height: 160px;
    text-align: center;
    font-size: 80px;
 
-   /* TODO: Add part of your solution here */
+   /* Rule 2: Style the Cards - Rounded corners and shadow */
+   border-radius: 5px;
+   box-shadow: 3px 3px 0px black;
 
 }      
 
 .card-top {
-   /* TODO: Add part of your solution here */
+   /* Rule 3: Position the Top Card - Absolute positioning */
+   position: absolute;
+   left: calc(50% - 95px);
+   top: calc(50% - 90px);
+   /* Rule 5: Stack the Cards - Higher z-index for top card */
+   z-index: 2;
 
 }
 
 .card-bottom {
-   /* TODO: Add part of your solution here */
+   /* Rule 4: Position the Bottom Card - Absolute positioning */
+   position: absolute;
+   left: calc(50% - 5px);
+   top: calc(50% - 70px);
+   /* Rule 5: Stack the Cards - Lower z-index for bottom card */
+   z-index: 1;
 
 }
 
@@ -54,11 +73,17 @@
 }
 
 .top-left {
-   /* TODO: Add part of your solution here */
+   /* Rule 6: Position Card Symbols - Top left corner */
+   position: absolute;
+   left: 2px;
+   top: 2px;
 
 }
 
 .bottom-right {
-   /* TODO: Add part of your solution here */
+   /* Rule 6: Position Card Symbols - Bottom right corner */
+   position: absolute;
+   right: 2px;
+   bottom: 2px;
 
 }
