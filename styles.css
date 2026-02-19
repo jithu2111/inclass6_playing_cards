@@ -2,8 +2,9 @@
    width: 400px;
    height: 300px;
 
-   /* TODO: Add part of your solution here */
-   
+   /* Rule 1: Table Background - Linear gradient from forestgreen to darkgreen */
+   background: linear-gradient(to bottom, forestgreen, darkgreen);
+
 }
 
 .card-red {
@@ -16,14 +17,16 @@
 
 .card {
    background-color: whitesmoke;
-   border: 1px solid black;         
+   border: 1px solid black;
    width: 100px;
    height: 160px;
    line-height: 160px;
    text-align: center;
    font-size: 80px;
 
-   /* TODO: Add part of your solution here */
+   /* Rule 2: Style the Cards - Rounded corners and shadow */
+   border-radius: 5px;
+   box-shadow: 3px 3px 0px black;
 
 }      
 
