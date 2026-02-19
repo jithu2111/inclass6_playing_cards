@@ -34,6 +34,15 @@ body {
    border-radius: 5px;
    box-shadow: 3px 3px 0px black;
 
+   /* Hover effect - smooth transition */
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   cursor: pointer;
+
+}
+
+.card:hover {
+   transform: translateY(-10px);
+   box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.5);
 }      
 
 .card-top {
