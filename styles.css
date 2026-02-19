@@ -43,6 +43,7 @@ body {
 .card:hover {
    transform: translateY(-10px);
    box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.5);
+   z-index: 10;
 }      
 
 .card-top {
