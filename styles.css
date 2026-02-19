@@ -1,6 +1,12 @@
+body {
+   margin: 0;
+   padding: 0;
+}
+
 .table {
-   width: 400px;
-   height: 300px;
+   width: 100vw;
+   height: 100vh;
+   position: relative;
 
    /* Rule 1: Table Background - Linear gradient from forestgreen to darkgreen */
    background: linear-gradient(to bottom, forestgreen, darkgreen);
@@ -33,8 +39,8 @@
 .card-top {
    /* Rule 3: Position the Top Card - Absolute positioning */
    position: absolute;
-   left: 150px;
-   top: 100px;
+   left: calc(50% - 95px);
+   top: calc(50% - 90px);
    /* Rule 5: Stack the Cards - Higher z-index for top card */
    z-index: 2;
 
@@ -43,8 +49,8 @@
 .card-bottom {
    /* Rule 4: Position the Bottom Card - Absolute positioning */
    position: absolute;
-   left: 240px;
-   top: 120px;
+   left: calc(50% - 5px);
+   top: calc(50% - 70px);
    /* Rule 5: Stack the Cards - Lower z-index for bottom card */
    z-index: 1;
 
